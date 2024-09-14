@@ -78,6 +78,7 @@ st.title('Directory Sizes Pie Chart')
 
 # Get fresh data for the pie chart
 labels, sizes, colors = get_data()
+labels = [label[2:] for label in labels]
 
 # # Debug outputs
 # st.write("Labels:", labels)

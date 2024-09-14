@@ -17,7 +17,7 @@ extensionsAndFolders = {
 
 def checkIfAllFolders():
     for foldername in extensionsAndFolders.values():
-        if os.path.isdir(foldername):
+        if not os.path.isdir(foldername):
             os.mkdir(foldername)
 
 
